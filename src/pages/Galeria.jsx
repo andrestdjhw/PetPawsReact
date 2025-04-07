@@ -38,7 +38,7 @@ export const Galeria = () => {
                     <img class="gallery-item" src="https://picsum.photos/id/582/600/400" alt="Imagen 10"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://picsum.photos/id/584/600/400"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/584/600/400" alt="Imagen 11"/>
                 </div>
                 <div>
                     <img class="gallery-item" src="https://picsum.photos/id/699/600/400" alt="Imagen 12"/>
