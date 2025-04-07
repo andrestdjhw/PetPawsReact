@@ -8,40 +8,40 @@ export const Galeria = () => {
 
             <div class="gallery-container">
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="Imagen 1"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/837/600/400" alt="Imagen 1"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Imagen 2"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/659/600/400" alt="Imagen 2"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Imagen 3"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/237/600/400" alt="Imagen 3"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Imagen 4"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/169/600/400" alt="Imagen 4"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="Imagen 5"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/40/600/400"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="Imagen 6"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/200/600/400" alt="Imagen 6"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="Imagen 7"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/219/600/400" alt="Imagen 7"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="Imagen 8"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/244/600/400" alt="Imagen 8"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="Imagen 9"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/258/600/400" alt="Imagen 9"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="Imagen 10"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/582/600/400" alt="Imagen 10"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="Imagen 11"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/584/600/400"/>
                 </div>
                 <div>
-                    <img class="gallery-item" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="Imagen 12"/>
+                    <img class="gallery-item" src="https://picsum.photos/id/699/600/400" alt="Imagen 12"/>
                 </div>
             </div>
         </section>
