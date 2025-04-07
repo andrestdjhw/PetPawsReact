@@ -1,0 +1,17 @@
+.filterpanel-container{
+    @apply bg-white p-5 rounded-2xl shadow-xl border border-gray-200 w-80 h-fit sticky top-4;
+}
+
+.filterpanel-title{
+    @apply text-xl font-bold text-gray-800 mb-4 border-b pb-2 border-gray-100;
+}
+
+.applyfilter-button{
+    @apply bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-all duration-300 
+    flex items-center justify-center gap-2 font-medium text-sm shadow-md hover:shadow-lg;
+}
+
+.cleanfilter-button{
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded-lg transition-all duration-300 
+    flex items-center justify-center gap-2 font-medium text-sm shadow-md hover:shadow-lg;
+}

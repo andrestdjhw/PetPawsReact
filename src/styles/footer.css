@@ -1,0 +1,46 @@
+.footer-container{
+   @apply bg-gray-800 
+        px-4 
+        md:px-16 
+        lg:px-28 
+        mt-8;
+}
+
+.footer-columns{
+    @apply grid 
+        grid-cols-1 
+        md:grid-cols-4 
+        gap-8;
+}
+
+.footer-title{
+    @apply text-lg 
+        text-white 
+        font-bold 
+        mt-8;
+}
+
+.footer-link{
+    @apply hover:underline 
+        text-gray-300;
+}
+
+.footer-social-icon{
+    @apply text-white
+        mt-6;
+}
+
+.footer-social-link{
+    @apply hover:underline 
+        text-gray-300
+        mt-4;
+}
+
+.footer-copyright{
+    @apply border-t 
+        border-gray-600 
+        p-4 
+        text-gray-300 
+        text-center 
+        mt-6;
+}

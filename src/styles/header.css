@@ -1,0 +1,105 @@
+.header-container{
+    @apply w-full 
+        shadow-md 
+        z-50 
+        bg-amber-400;
+}
+
+.main-header-top{
+    @apply bg-white 
+        px-4 
+        sm:px-6 
+        lg:px-8 
+        py-4 flex flex-col 
+        lg:flex-row 
+        items-center 
+        justify-between 
+        gap-4 
+        max-w-7xl 
+        mx-auto;
+}
+
+.logo-search{
+    @apply flex 
+        flex-col 
+        lg:flex-row 
+        items-center 
+        gap-4 
+        lg:gap-6 
+        w-full 
+        lg:w-auto;
+}
+
+.brand-title{
+    @apply text-amber-700 
+        text-2xl 
+        sm:text-3xl 
+        font-bold 
+        hover:scale-105 
+        transition-transform 
+        flex-shrink-0;
+}
+
+.search-input{
+    @apply flex 
+        bg-gray-100 
+        rounded-full 
+        overflow-hidden 
+        shadow-sm 
+        w-full 
+        lg:w-[400px] h-12;
+}
+
+.placeholder-style{
+    @apply px-4 
+        py-2 
+        w-full 
+        text-gray-700 
+        focus:outline-none 
+        placeholder-gray-400 
+        bg-transparent;
+}
+
+.search-button-color{
+    @apply bg-amber-700 
+        hover:bg-amber-600 
+        px-5 flex items-center 
+        justify-center 
+        transition-colors 
+        flex-shrink-0;
+}
+
+.search-icon-color{
+    @apply text-white 
+        text-xl;
+}
+
+.user-cart-container{
+    @apply flex 
+        items-center 
+        gap-4 
+        sm:gap-6 
+        text-gray-700 
+        flex-shrink-0;
+}
+
+.navigation-bar-gradient{
+    @apply w-full 
+        flex justify-center 
+        bg-gradient-to-r from-amber-500 to-amber-700 
+        border-t border-gray-100;
+}
+
+.navigation-items-container{
+   @apply w-full 
+    max-w-7xl 
+    flex items-center 
+    py-3 px-4 
+    sm:px-6 lg:px-8;
+}
+
+.navigation-items-display{
+    @apply flex items-center w-full;
+}
+
+
