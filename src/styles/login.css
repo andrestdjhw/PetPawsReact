@@ -1,0 +1,39 @@
+.login-page{
+    @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-amber-100 p-4;
+}
+
+.login-card{
+    @apply w-full max-w-md bg-white rounded-xl shadow-xl overflow-hidden;
+}
+
+.login-header{
+    @apply bg-amber-600 p-6 text-center;
+}
+
+.login-title{
+    @apply text-2xl font-bold text-white;
+}
+
+.login-account{
+    @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none;
+}
+
+.login-password{
+    @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none;
+}
+
+.remember-checkbox{
+    @apply w-4 h-4 text-amber-600 border-amber-300 rounded focus:ring-amber-500;
+}
+
+.forgot-password-link{
+    @apply text-sm font-medium text-amber-600 hover:text-amber-800;
+}
+
+.login-button{
+    @apply w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 disabled:opacity-70 disabled:cursor-not-allowed transition-colors;
+}
+
+.register-link{
+    @apply font-medium text-amber-600 hover:text-amber-800;
+}
