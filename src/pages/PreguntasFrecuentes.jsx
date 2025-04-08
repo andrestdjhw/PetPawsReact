@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 
 
 export const FAQ = () => {
+  const navigate = useNavigate();
   const [preguntaActiva, setPreguntaActiva] = useState(null);
   const preguntas = [
     {
@@ -134,7 +135,7 @@ export const FAQ = () => {
             <p className="text-amber-800 mb-4">
               Si tienes alguna otra pregunta, no dudes en contactarnos.
             </p>
-            <button className="py-3 px-6 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors">
+            <button onClick={() => navigate('/contacto')} className="py-3 px-6 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors">
               Contactar
             </button>
           </div>

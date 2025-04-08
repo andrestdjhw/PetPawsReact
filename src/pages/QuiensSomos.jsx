@@ -1,7 +1,9 @@
- import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export const QuienesSomos = () => {
+  const navigate = useNavigate();
   return (
     <section className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 to-amber-100 p-4">
       <div className="container mx-auto px-4 py-8">
@@ -9,65 +11,65 @@ export const QuienesSomos = () => {
           <h1 className="text-2xl font-bold text-white">¿Quiénes Somos?</h1>
           <p className="text-amber-100 mt-1">Conoce nuestra organización</p>
         </div>
-        
+
         <div className="bg-white p-6 rounded-b-xl shadow-xl mb-8">
           <div className="prose max-w-none text-amber-900">
             <p className="text-lg mb-4 text-amber-800">
-              Somos una organización sin fines de lucro comprometida con encontrar hogares amorosos y 
-              seguros para animales sin hogar. Nuestra misión es rescatar, cuidar y reintegrar a estos 
+              Somos una organización sin fines de lucro comprometida con encontrar hogares amorosos y
+              seguros para animales sin hogar. Nuestra misión es rescatar, cuidar y reintegrar a estos
               maravillosos compañeros en familias que les brinden la calidad de vida que merecen.
             </p>
-            
+
             <p className="text-lg mb-4 text-amber-800">
-              Nuestro equipo está compuesto por voluntarios apasionados, amantes de los animales y 
+              Nuestro equipo está compuesto por voluntarios apasionados, amantes de los animales y
               personas dedicadas a marcar la diferencia.
             </p>
-            
+
             <p className="text-lg mb-6 text-amber-800">
               ¡Únete a nosotros para construir un mundo donde ningún animal se quede sin un hogar!
             </p>
           </div>
-          
+
           <div className="mt-8 pt-6 border-t border-amber-200">
             <h2 className="text-xl font-semibold text-center text-amber-800 mb-4">Contáctanos</h2>
-            
+
             <p className="text-center text-amber-700 mb-2">
               Teléfono: <a href="tel:+50412345678" className="text-amber-600 hover:text-amber-800 transition-colors">
                 +504 1234 5678
               </a>
             </p>
-            
+
             <p className="text-center text-amber-700 mb-4">
               Síguenos en nuestras redes sociales:
             </p>
-            
+
             <div className="flex justify-center gap-4 mb-4">
-              <a 
-                href="https://facebook.com/NuestraOrganizacion" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://facebook.com/NuestraOrganizacion"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-600 hover:bg-amber-600 hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
                 </svg>
               </a>
-              
-              <a 
-                href="https://twitter.com/NuestraOrganizacion" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+
+              <a
+                href="https://twitter.com/NuestraOrganizacion"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-600 hover:bg-amber-600 hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                 </svg>
               </a>
-              
-              <a 
-                href="https://instagram.com/NuestraOrganizacion" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+
+              <a
+                href="https://instagram.com/NuestraOrganizacion"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-600 hover:bg-amber-600 hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -75,14 +77,16 @@ export const QuienesSomos = () => {
                 </svg>
               </a>
             </div>
-            
+
             <div className="text-center mt-6">
-              <a 
-                href="#contacto" 
-                className="inline-block py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors"
-              >
-                Contáctanos hoy
-              </a>
+              <Link to="/contacto">
+                <a
+                  href="#/contacto"
+                  className="inline-block py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors"
+                >
+                  Contáctanos hoy
+                </a>
+              </Link>
             </div>
           </div>
         </div>
