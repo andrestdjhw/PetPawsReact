@@ -71,7 +71,7 @@ export const Header = () => {
       <div className="navigation-bar-gradient">
         <nav className="navigation-items-container">
           <div className="navigation-items-display">
-            <div className="bg-amber-200 rounded-md px-4 py-1  hover:bg-amber-50 hover:shadow-md transform hover:scale-[1.02] transition-all duration-300 animate-fade-in w-full">
+            <div className="bg-lime-50 rounded-md px-4 py-1  hover:bg-amber-50 hover:shadow-md transform hover:scale-[1.02] transition-all duration-300 animate-fade-in w-full">
               <ul className="flex items-center justify-between w-full">
                 {[
                   { to: '/', label: 'Inicio' },
