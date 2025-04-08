@@ -5,7 +5,7 @@ export const PetListItem = ({ name, cod, img, type, width, height, onShowDetail 
             <div>
                 <h3>{name} ({type})</h3>
                 <p>ID: {cod}</p>
-                <button onClick={()=>{onShowDetail(cod)}}>Detalles</button>
+                <button onClick={()=>{onShowDetail(cod)}}>¡Adopta!</button>
             </div>
         </div>
     );
