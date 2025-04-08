@@ -144,7 +144,7 @@ export const Login = () => {
             <div className="text-center mt-4">
               <p className="text-sm text-amber-800">
                 ¿Aun no tienes cuenta?{" "}
-                <a href="/" className="register-link">
+                <a href="/registro" className="register-link">
                   Registrarse
                 </a>
               </p>

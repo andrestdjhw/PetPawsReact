@@ -15,6 +15,7 @@ import { Noticias } from './pages/Noticias';
 import { Contacto } from './pages/Contacto';
 import { Favoritos } from './pages/Favoritos';
 import { Login} from './pages/Login';
+import { Registro } from './pages/Registro';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/contacto" element={<Contacto/>} />
         <Route path="/favoritos" element={<Favoritos/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/registro" element={<Registro/>} />
         <Route path="/detail/:pokecod" element={<Detail/>} />
       </Route>
     </Routes>
