@@ -1,8 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router";
 
-
-
 export const Contacto = () => {
   const [formData, setFormData] = useState({
     name: '',
