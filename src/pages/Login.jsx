@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router";
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
     const [formData, setFormData] = useState({
@@ -143,7 +144,7 @@ export const Login = () => {
             <div className="text-center mt-4">
               <p className="text-sm text-amber-800">
                 ¿Aun no tienes cuenta?{" "}
-                <a href="#" className="register-link">
+                <a href="/" className="register-link">
                   Registrarse
                 </a>
               </p>
