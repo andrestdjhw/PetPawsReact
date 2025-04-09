@@ -6,10 +6,17 @@ import { PetList } from "../components/Pets/petList";
 
 export const Adopciones = () => {
   const [pets, setPets] = useState([]);
+
+  const navigateTo = useNavigate();
   
   useEffect(() => {
     getPetList().then(data => setPets(data));
   }, []);
+
+  const viewPetdDetail = (id)=>{
+    const url = `mascota/${id}`;
+    navigateTo(url);
+}
   
   return (
     <section className="min-h-screen bg-gradient-to-br from-amber-50 to-amber-100 p-4">
@@ -21,46 +28,7 @@ export const Adopciones = () => {
         
         <div className="bg-white p-6 rounded-b-xl shadow-xl mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pets.map((pet) => (
-              <div key={pet.id} className="bg-amber-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={pet.url} 
-                    alt={pet.name} 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-2 left-2">
-                    
-                  </div>
-                </div>
-                
-                <div className="p-4">
-                  <div className="flex justify-between items-center mb-2">
-                    <h3 className="text-lg font-semibold text-amber-800">{pet.name}</h3>
-                    <div className="flex items-center text-sm text-amber-600">
-                      <span>{pet.age}</span>
-                      <span className="mx-1">•</span>
-                      <span>{pet.gender}</span>
-                    </div>
-                  </div>
-                  
-                  <p className="text-sm text-amber-700 mb-3">{pet.breed}</p>
-                  <p className="text-sm text-amber-700 mb-4 line-clamp-2">{pet.description}</p>
-                  
-                  <div className="flex justify-between items-center">
-                    <button className="text-sm text-amber-600 hover:text-amber-800 font-medium flex items-center transition-colors">
-                      Ver detalles
-                      <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                    <button className="py-1 px-3 border border-amber-600 rounded-lg text-xs font-medium text-amber-600 hover:bg-amber-600 hover:text-white transition-colors">
-                      Adoptar
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
+            <PetList pets={pets}  clickHandler={ console.log(pets)}  />
           </div>
           
           {pets.length === 0 && (

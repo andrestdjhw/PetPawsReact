@@ -16,6 +16,7 @@ import { Contacto } from './pages/Contacto';
 import { Favoritos } from './pages/Favoritos';
 import { Login} from './pages/Login';
 import { Registro } from './pages/Registro';
+import { Mascota } from './pages/Mascota';  
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
         <Route path="/detail/:pokecod" element={<Detail/>} />
+        <Route path="/mascota/:id" element={<Mascota/>} />
       </Route>
     </Routes>
     </BrowserRouter>
