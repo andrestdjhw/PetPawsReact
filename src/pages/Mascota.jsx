@@ -34,7 +34,6 @@ export const Mascota = ()=>{
           {mascotaData.sexo === "Hembra" && <span className="text-pink-500">♀️</span>}
           {mascotaData.sexo === "Macho" && <span className="text-blue-500">♂️</span>}
         </h2>
-        <p className="text-gray-600">{mascotaData.ubicacion || "Ubicación desconocida"}</p>
 
         {/* Datos */}
         <div className="grid grid-cols-2 gap-x-4 text-sm">
