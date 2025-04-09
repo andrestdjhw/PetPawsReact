@@ -86,14 +86,14 @@ export const FAQ = () => {
   );
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-amber-100 p-4">
-      <div className="w-full max-w-4xl bg-white rounded-xl shadow-xl overflow-hidden">
-        <div className="bg-amber-600 p-6 text-center">
-          <h1 className="text-2xl font-bold text-white">Preguntas Frecuentes</h1>
-          <p className="text-amber-100 mt-1">Todo lo que necesitas saber sobre adopciones</p>
+    <section className="faq-page">
+      <div className="faq-card">
+        <div className="faq-header">
+          <h1 className="faq-title">Preguntas Frecuentes</h1>
+          <p className="faq-subtitle">Todo lo que necesitas saber sobre adopciones</p>
         </div>
         
-        <div className="p-6 space-y-4">
+        <div className="faq-accordion-container">
           {preguntas.map((item) => (
             <div
               key={item.id}
@@ -102,15 +102,15 @@ export const FAQ = () => {
               }`}
             >
               <button
-                className="flex items-center justify-between w-full p-4 text-left focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="faq-accordion-button"
                 onClick={() => togglePregunta(item.id)}
                 aria-expanded={preguntaActiva === item.id}
                 aria-controls={`answer-${item.id}`}
               >
-                <h3 className="font-medium text-lg text-amber-900">
+                <h3 className="faq-accordion-title">
                   {item.pregunta}
                 </h3>
-                <span className="text-amber-600 ml-2">
+                <span className="faq-accordion-text">
                   {preguntaActiva === item.id ? <ChevronUp /> : <ChevronDown />}
                 </span>
               </button>
@@ -135,7 +135,7 @@ export const FAQ = () => {
             <p className="text-amber-800 mb-4">
               Si tienes alguna otra pregunta, no dudes en contactarnos.
             </p>
-            <button onClick={() => navigate('/contacto')} className="py-3 px-6 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors">
+            <button onClick={() => navigate('/contacto')} className="navigate-to-contact">
               Contactar
             </button>
           </div>
