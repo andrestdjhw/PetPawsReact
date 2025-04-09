@@ -22,3 +22,88 @@
 .adopciones .container .content{
     @apply bg-white p-6 rounded-b-xl shadow-xl mb-8;
 }
+
+
+.mascotas{
+    @apply bg-amber-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.mascotas .img-content{
+    @apply relative h-48 overflow-hidden;
+}
+
+.mascotas .img-content img{
+    @apply w-full h-full object-cover;
+}
+
+.pet-body{
+    @apply p-4;
+}
+
+.pet-body .content{
+    @apply flex justify-between items-center mb-2;
+}
+
+.pet-body .content h3{
+    @apply text-lg font-semibold text-amber-800;
+}
+.pet-body .content .raza{
+    @apply flex items-center text-sm text-amber-600;
+}
+
+
+.btn-section{
+    @apply flex justify-between items-center;
+}
+
+.btn-section .detalle{
+    @apply text-sm text-amber-600 hover:text-amber-800 font-medium flex items-center transition-colors;
+}
+
+.btn-section .adoptar{
+    @apply py-1 px-3 border border-amber-600 rounded-lg text-xs font-medium text-amber-600 hover:bg-amber-600 hover:text-white transition-colors;
+}
+
+.seccion-detalle{
+    @apply mt-4 max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-white rounded-2xl shadow-lg;
+}
+
+.seccion-detalle .img-content{
+    @apply col-span-1 flex flex-col items-center;
+}
+.seccion-detalle .img-content img{
+    @apply w-48 h-48 object-cover rounded-xl shadow-md;
+}
+
+.seccion-detalle .header
+{
+    @apply col-span-2 space-y-4;
+}
+
+.seccion-detalle h2{
+    @apply text-3xl font-bold flex items-center gap-2;
+}
+
+.seccion-detalle .header .detalles{
+    @apply grid grid-cols-2 gap-x-4 text-sm;
+}
+
+.seccion-detalle .header h3{
+    @apply text-lg font-semibold mt-4;
+}
+
+.seccion-detalle .header .comosoy{
+    @apply flex flex-wrap gap-2 mt-2;
+}
+
+.seccion-detalle .header .comosoy .item{
+    @apply bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm;
+}
+
+.seccion-detalle .header .meentregan{
+    @apply list-disc list-inside text-sm;
+}
+
+.seccion-detalle .header p{
+    @apply text-sm text-gray-700 mt-1;
+}
