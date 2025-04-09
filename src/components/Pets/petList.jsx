@@ -1,21 +1,21 @@
-import { getPetList } from "../../services/petServiceApi";
+import { Mascota} from "../../services/Mascotas"
 import { PetListItem } from "./petListItem"; 
 
-export const PetList = ({ pets, onShowDetail }) => {
+export const PetList = ({
+    pets,
+        clickHandler = (code)=>{}
+}) => {
     return (
-        <section className="petHolder">
-            {pets.map((pet) => (
-                <PetListItem
-                    key={pet.id}
-                    name={pet.name}
-                    cod={pet.id}
-                    img={pet.url}
-                    type={pet.type}
-                    width={pet.width}
-                    height={pet.height}
-                    onShowDetail={() => onShowDetail(pet)}
-                />
-            ))}
-        </section>
+        Mascota.map((pet) => (
+            <PetListItem
+                key={pet.nombre}
+                name={pet.nombre}
+                img={pet.imagen}
+                tipo={pet.tipo}
+                raza={pet.raza}
+                onClickHandler={clickHandler}/>
+        ))
     );
 };
+
+
