@@ -1,0 +1,24 @@
+.adopciones
+{
+    @apply min-h-screen bg-gradient-to-br from-amber-50 to-amber-100 p-4;
+}
+
+.adopciones .container
+{
+    @apply container mx-auto px-4 py-8;
+}
+
+.adopciones .container .header{
+    @apply bg-amber-600 p-6 text-center rounded-t-xl shadow-lg;
+}
+
+.adopciones .container .header h1{
+    @apply text-2xl font-bold text-white;
+}
+.adopciones .container .header p{
+    @apply text-amber-100 mt-1;
+}
+
+.adopciones .container .content{
+    @apply bg-white p-6 rounded-b-xl shadow-xl mb-8;
+}
