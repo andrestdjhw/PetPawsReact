@@ -1,0 +1,27 @@
+.about-page{
+    @apply min-h-screen flex flex-col bg-gradient-to-br from-amber-50 to-amber-100 p-4;
+}
+
+.about-header{
+    @apply bg-amber-600 p-6 text-center rounded-t-xl shadow-lg;
+}
+
+.about-card{
+    @apply bg-white p-6 rounded-b-xl shadow-xl mb-8;
+}
+
+.about-paragraph{
+    @apply text-lg mb-4 text-amber-800;
+}
+
+.about-paragraph-short{
+    @apply text-lg mb-6 text-amber-800;
+}
+
+.about-contact-section{
+    @apply mt-8 pt-6 border-t border-amber-200;
+}
+
+.about-contact-title{
+    @apply text-xl font-semibold text-center text-amber-800 mb-4;
+}

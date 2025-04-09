@@ -5,33 +5,33 @@ import { Link } from 'react-router-dom';
 export const QuienesSomos = () => {
   const navigate = useNavigate();
   return (
-    <section className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 to-amber-100 p-4">
+    <section className="about-page">
       <div className="container mx-auto px-4 py-8">
-        <div className="bg-amber-600 p-6 text-center rounded-t-xl shadow-lg">
-          <h1 className="text-2xl font-bold text-white">¿Quiénes Somos?</h1>
-          <p className="text-amber-100 mt-1">Conoce nuestra organización</p>
+        <div className="about-header">
+          <h1 className="page-title">¿Quiénes Somos?</h1>
+          <p className="page-subtitle">Conoce nuestra organización</p>
         </div>
 
-        <div className="bg-white p-6 rounded-b-xl shadow-xl mb-8">
+        <div className="about-card">
           <div className="prose max-w-none text-amber-900">
-            <p className="text-lg mb-4 text-amber-800">
+            <p className="about-paragraph">
               Somos una organización sin fines de lucro comprometida con encontrar hogares amorosos y
               seguros para animales sin hogar. Nuestra misión es rescatar, cuidar y reintegrar a estos
               maravillosos compañeros en familias que les brinden la calidad de vida que merecen.
             </p>
 
-            <p className="text-lg mb-4 text-amber-800">
+            <p className="about-paragraph">
               Nuestro equipo está compuesto por voluntarios apasionados, amantes de los animales y
               personas dedicadas a marcar la diferencia.
             </p>
 
-            <p className="text-lg mb-6 text-amber-800">
+            <p className="about-paragraph-short">
               ¡Únete a nosotros para construir un mundo donde ningún animal se quede sin un hogar!
             </p>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-amber-200">
-            <h2 className="text-xl font-semibold text-center text-amber-800 mb-4">Contáctanos</h2>
+          <div className="about-contact-section">
+            <h2 className="about-contact-title">Contáctanos</h2>
 
             <p className="text-center text-amber-700 mb-2">
               Teléfono: <a href="tel:+50412345678" className="text-amber-600 hover:text-amber-800 transition-colors">
