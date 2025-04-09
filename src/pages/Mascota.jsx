@@ -31,8 +31,8 @@ export const Mascota = ()=>{
       <div className="col-span-2 space-y-4">
         <h2 className="text-3xl font-bold flex items-center gap-2">
           {mascotaData.nombre}
-          {mascotaData.sexo === "Hembra" && <span className="text-pink-500">♀️</span>}
-          {mascotaData.sexo === "Macho" && <span className="text-blue-500">♂️</span>}
+          {mascotaData.sexo === "hembra" && <span className="text-pink-500">♀️</span>}
+          {mascotaData.sexo === "macho" && <span className="text-blue-500">♂️</span>}
         </h2>
 
         {/* Datos */}
