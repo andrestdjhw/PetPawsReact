@@ -29,4 +29,26 @@ export const getPetList = () => {
         console.error("Error al obtener imágenes:", error);
         return []; 
     });
-  };
+};
+
+
+export const getPetDetailById = async (id) => {
+    try {
+        // Intenta con la API de gatos
+        const catResponse = await fetch(`https://api.thecatapi.com/v1/images/${id}`);
+        const catData = await catResponse.json();
+
+        if (catData?.breeds?.length > 0) {
+            return { ...catData, type: "cat" };
+        }
+
+        // Si no es un gato, prueba con la API de perros
+        const dogResponse = await fetch(`https://api.thedogapi.com/v1/images/${id}`);
+        const dogData = await dogResponse.json();
+
+        return { ...dogData, type: "dog" };
+    } catch (error) {
+        console.error("Error al obtener detalle del pet:", error);
+        return null;
+    }
+};

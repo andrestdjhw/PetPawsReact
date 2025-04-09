@@ -13,7 +13,9 @@ export const PetList = ({ pets, onShowDetail }) => {
                     type={pet.type}
                     width={pet.width}
                     height={pet.height}
-                    onShowDetail={() => onShowDetail(pet)}
+                    breads={pet.breeds}
+                    onShowDetail={ onShowDetail}
+                    
                 />
             ))}
         </section>

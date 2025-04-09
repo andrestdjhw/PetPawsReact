@@ -8,6 +8,7 @@ import FilterPanel from "../components/FilterPanel";
 export const Adopciones = () =>{
     const [pets, setPets] = useState([]);
 
+    const navigate = useNavigate();
     useEffect(() => {
         getPetList().then(data => setPets(data));
     }, []);
@@ -27,7 +28,7 @@ export const Adopciones = () =>{
             <FilterPanel onApplyFilters={applyFilters} onClearFilters={clearFilters} />
             <div className="flex-1">
                 <h1 className="text-3xl font-bold text-center mb-6">Nuestras Mascotas</h1>
-                <PetList pets={pets} onShowDetail={(pet) => console.log(pet)} />
+                <PetList pets={pets} onShowDetail={(id) => navigate(`/petdetail/${id}`)} />
             </div>
         </section>
     )

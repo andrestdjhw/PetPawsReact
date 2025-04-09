@@ -15,6 +15,7 @@ import { Noticias } from './pages/Noticias';
 import { Contacto } from './pages/Contacto';
 import { Favoritos } from './pages/Favoritos';
 import { Login} from './pages/Login';
+import {PetDetail} from './pages/PetDetail';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/favoritos" element={<Favoritos/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/detail/:pokecod" element={<Detail/>} />
+        <Route path="/petdetail/:id" element={<PetDetail/>} />
       </Route>
     </Routes>
     </BrowserRouter>
