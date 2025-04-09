@@ -59,13 +59,13 @@ export const Registro = () => {
             <div className="login-card">
                 <div className="login-header">
                     <h1 className="login-title">Crea Tu Cuenta</h1>
-                    <p className="text-amber-100 mt-1">Registro de Usuario</p>
+                    <p className="register-subtitle">Registro de Usuario</p>
                 </div>
 
-                <form className="p-6 space-y-4" onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form className="register-form-layout" onSubmit={handleSubmit}>
+                    <div className="register-form-grid">
                         <div>
-                            <label htmlFor="nombre" className="block text-sm font-medium text-amber-900 mb-2">
+                            <label htmlFor="nombre" className="register-form-label">
                                 Nombre
                             </label>
                             <div className="relative">
@@ -77,7 +77,7 @@ export const Registro = () => {
                                 <input
                                     type="text"
                                     id="nombre"
-                                    className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg pl-10 p-2.5 w-full focus:ring-amber-500 focus:border-amber-500"
+                                    className="register-input-style"
                                     placeholder="Tu nombre"
                                     value={formData.nombre}
                                     onChange={handleChange}
@@ -87,7 +87,7 @@ export const Registro = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="apellido" className="block text-sm font-medium text-amber-900 mb-2">
+                            <label htmlFor="apellido" className="register-form-label">
                                 Apellido
                             </label>
                             <div className="relative">
@@ -99,7 +99,7 @@ export const Registro = () => {
                                 <input
                                     type="text"
                                     id="apellido"
-                                    className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg pl-10 p-2.5 w-full focus:ring-amber-500 focus:border-amber-500"
+                                    className="register-input-style"
                                     placeholder="Tu apellido"
                                     value={formData.apellido}
                                     onChange={handleChange}
@@ -110,7 +110,7 @@ export const Registro = () => {
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-amber-900 mb-2">
+                        <label htmlFor="email" className="register-form-label">
                             Correo Electrónico
                         </label>
                         <div className="relative">
@@ -123,7 +123,7 @@ export const Registro = () => {
                             <input
                                 type="email"
                                 id="email"
-                                className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg pl-10 p-2.5 w-full focus:ring-amber-500 focus:border-amber-500"
+                                className="register-input-style"
                                 placeholder="nombre@petpaws.com"
                                 value={formData.email}
                                 onChange={handleChange}
@@ -133,7 +133,7 @@ export const Registro = () => {
                     </div>
 
                     <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-amber-900 mb-2">
+                        <label htmlFor="password" className="register-form-label">
                             Contraseña
                         </label>
                         <div className="relative">
@@ -145,7 +145,7 @@ export const Registro = () => {
                             <input
                                 type={showPassword ? "text" : "password"}
                                 id="password"
-                                className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg pl-10 p-2.5 w-full focus:ring-amber-500 focus:border-amber-500"
+                                className="register-input-style"
                                 placeholder="••••••••"
                                 value={formData.password}
                                 onChange={handleChange}
@@ -174,7 +174,7 @@ export const Registro = () => {
                     </div>
 
                     <div>
-                        <label htmlFor="confirmPassword" className="block text-sm font-medium text-amber-900 mb-2">
+                        <label htmlFor="confirmPassword" className="register-form-label">
                             Confirmar Contraseña
                         </label>
                         <div className="relative">

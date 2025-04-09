@@ -1,0 +1,19 @@
+.register-subtitle{
+    @apply text-amber-100 mt-1;
+}
+
+.register-form-layout{
+    @apply p-6 space-y-4;
+}
+
+.register-form-grid{
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.register-form-label{
+    @apply block text-sm font-medium text-amber-900 mb-2;
+}
+
+.register-input-style{
+    @apply bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg pl-10 p-2.5 w-full focus:ring-amber-500 focus:border-amber-500;
+}
