@@ -196,3 +196,7 @@ export const Mascota =[{
   }
 
 ]
+
+export const obtenerMascotaPorNombre = (nombre) => {
+  return Mascota.find(mascota => mascota.nombre.toLowerCase() === nombre.toLowerCase());
+};

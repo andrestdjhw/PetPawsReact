@@ -21,7 +21,7 @@ export const PetListItem = ({ name,  img, tipo, raza, onClickHandler= (name)=>{}
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <button onClick={()=>{onClickHandler(cod);}}
+                  <button onClick={()=>{onClickHandler(name);}}
                   className="text-sm text-amber-600 hover:text-amber-800 font-medium flex items-center transition-colors">
                     Ver detalles
                     <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

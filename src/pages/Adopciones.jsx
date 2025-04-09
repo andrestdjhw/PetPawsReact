@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
-import { getPetList } from "../services/petServiceApi";
 import { PetList } from "../components/Pets/petList";
 
 
@@ -9,12 +8,10 @@ export const Adopciones = () => {
 
   const navigateTo = useNavigate();
   
-  useEffect(() => {
-    getPetList().then(data => setPets(data));
-  }, []);
 
-  const viewPetdDetail = (id)=>{
-    const url = `mascota/${id}`;
+
+  const viewPetdDetail = (nombre)=>{
+    const url = `mascota/${nombre}`;
     navigateTo(url);
 }
   
@@ -28,7 +25,7 @@ export const Adopciones = () => {
         
         <div className="bg-white p-6 rounded-b-xl shadow-xl mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <PetList pets={pets}  clickHandler={ console.log(pets)}  />
+            <PetList pets={pets}  clickHandler={ viewPetdDetail}  />
           </div>
           
           {pets.length === 0 && (

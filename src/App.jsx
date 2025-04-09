@@ -36,7 +36,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
         <Route path="/detail/:pokecod" element={<Detail/>} />
-        <Route path="/mascota/:id" element={<Mascota/>} />
+        <Route path="/adopciones/mascota/:id" element={<Mascota />} />
       </Route>
     </Routes>
     </BrowserRouter>
