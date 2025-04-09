@@ -1,0 +1,76 @@
+/* Contenedor principal de las cards */
+.productHolder {
+    @apply p-4 /* Padding general */
+          flex flex-wrap /* Flexbox con wrap */
+          gap-6 /* Espacio entre cards más grande */
+          mx-auto /* Centrado horizontal */
+          max-w-6xl /* Ancho máximo aumentado */
+          justify-center; /* Centrado de cards */
+}
+
+/* Estilo individual de cada card */
+.productHolder-section {
+    @apply w-56 h-80 /* Altura para mejor encuadre */
+          flex flex-col /* Disposición vertical */
+          items-center /* Centrado horizontal */
+          justify-between /* Distribuir espacio entre los elementos */
+          border-2 border-gray-200 /* Borde más grueso y claro */
+          rounded-xl /* Esquinas muy redondeadas */
+          shadow-lg /* Sombra más pronunciada */
+          overflow-hidden /* Para contener elementos internos */
+          transition-all duration-300 /* Transiciones suaves */
+          hover:shadow-xl /* Efecto hover: sombra más grande */
+          hover:scale-105 /* Ligero zoom al pasar mouse */
+          hover:border-yellow-400 /* Borde amarillo al hover */
+          bg-gradient-to-b from-white to-gray-50; /* Gradiente sutil */
+}
+
+/* Imagen del Pokémon */
+.productHolder-section-img {
+    @apply w-36 h-36 /* Tamaño ligeramente más grande para mejor proporción */
+          object-contain /* Muestra toda la imagen sin recortar */
+          mt-6 /* Margen superior para centrar mejor */
+          drop-shadow-md; /* Sombra bajo la imagen */
+}
+
+/* Contenedor del contenido (texto + botón) */
+.productHolder-section-div {
+    @apply w-full /* Ocupa todo el ancho */
+          flex flex-col /* Disposición vertical */
+          items-center /* Centrado horizontal */
+          justify-center /* Centrar verticalmente el contenido */
+          flex-1 /* Ocupa el espacio disponible */
+          p-4 /* Padding interno */
+          pb-6 /* Más padding inferior para espacio debajo del botón */
+          bg-white; /* Fondo blanco sólido para evitar el gradiente */
+}
+
+/* Nombre del Pokémon */
+.productHolder-section-div-strong {
+    @apply text-xl font-bold /* Tamaño más grande y negrita */
+          text-gray-900 /* Color más oscuro para mayor contraste */
+          capitalize /* Primera letra mayúscula */
+          mb-4 /* Margen inferior para separar del botón */
+          drop-shadow-sm /* Sombra sutil para destacar el texto */
+          tracking-wide; /* Espaciado entre letras para mejor legibilidad */
+}
+
+/* Texto de detalles (opcional) */
+.productHolder-section-div-p {
+    @apply text-sm text-gray-600 /* Texto pequeño y gris */
+          mb-4; /* Margen inferior */
+}
+
+/* Botón de acción */
+.productHolder-section-div-button {
+    @apply py-2 px-6 /* Padding más horizontal */
+          rounded-full /* Círculo perfecto */
+          border-2 border-amber-600 /* Borde amber */
+          bg-gradient-to-r from-amber-500 to-amber-700 /* Fondo amber gradiente */
+          text-white font-semibold /* Texto blanco y negrita */
+          shadow-md /* Sombra */
+          transition-all /* Transiciones */
+          hover:bg-amber-700 /* Fondo azul más oscuro al hover */
+          hover:shadow-lg /* Sombra más grande al hover */
+          transform hover:-translate-y-1; /* Efecto de levitación */
+}

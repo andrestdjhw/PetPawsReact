@@ -18,6 +18,7 @@ import { Login} from './pages/Login';
 import { Registro } from './pages/Registro';
 import { Mascota } from './pages/Mascota';  
 import { AdopcionForm } from './pages/AdopcionForm';
+import { Productos } from './pages/Productos';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route element={<Layout/>}>
-        <Route path="/" element={<DashBoard/>} />
+        <Route path="/" element={<Productos/>} />
         <Route path="/galeria" element={<Galeria/>} />
         <Route path="/quienes-somos" element={<QuienesSomos/>} />
         <Route path="/carrito" element={<Carrito/>} />
