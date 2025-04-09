@@ -34,18 +34,18 @@ export const Contacto = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-amber-50 to-amber-100 p-4">
-      <div className="max-w-6xl mx-auto pt-8 pb-12">
-        <div className="bg-amber-600 p-6 text-center rounded-t-xl">
-          <h1 className="text-2xl font-bold text-white">Contáctanos</h1>
-          <p className="text-amber-100 mt-1">Estamos aquí para ayudarte con cualquier consulta</p>
+    <section className="contact-page">
+      <div className="contact-page-display">
+        <div className="contact-header">
+          <h1 className="page-title">Contáctanos</h1>
+          <p className="page-subtitle">Estamos aquí para ayudarte con cualquier consulta</p>
         </div>
         
-        <div className="bg-white rounded-b-xl shadow-xl overflow-hidden">
-          <div className="grid md:grid-cols-5 gap-0">
+        <div className="contact-white-half">
+          <div className="contact-form-display">
             {/* Contact Info Section - 2 columns on desktop */}
-            <div className="md:col-span-2 bg-amber-50 p-6 md:p-8">
-              <h2 className="text-xl font-semibold text-amber-800 mb-6">Información de Contacto</h2>
+            <div className="contact-form-spliter">
+              <h2 className="contact-info-title">Información de Contacto</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -56,7 +56,7 @@ export const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-amber-800">Dirección</h3>
+                    <h3 className="contact-info-subtitle">Dirección</h3>
                     <p className="text-amber-700 mt-1">Av. Principal 123, Ciudad</p>
                     <p className="text-amber-700">Código Postal 12345</p>
                   </div>
@@ -69,7 +69,7 @@ export const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-amber-800">Teléfono</h3>
+                    <h3 className="contact-info-subtitle">Teléfono</h3>
                     <p className="text-amber-700 mt-1">+123 456 7890</p>
                     <p className="text-amber-700">Lun - Vie: 9:00 - 18:00</p>
                   </div>
@@ -82,7 +82,7 @@ export const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-amber-800">Email</h3>
+                    <h3 className="contact-info-subtitle">Email</h3>
                     <p className="text-amber-700 mt-1">info@adopciones.com</p>
                     <p className="text-amber-700">soporte@adopciones.com</p>
                   </div>
@@ -95,7 +95,7 @@ export const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-amber-800">Horario</h3>
+                    <h3 className="contact-info-subtitle">Horario</h3>
                     <p className="text-amber-700 mt-1">Lunes a Viernes: 9:00 - 18:00</p>
                     <p className="text-amber-700">Sábados: 10:00 - 14:00</p>
                   </div>
@@ -103,9 +103,9 @@ export const Contacto = () => {
               </div>
               
               <div className="mt-10">
-                <h3 className="font-medium text-amber-800 mb-4">Síguenos</h3>
+                <h3 className="contact-info-subtitle mb-4">Síguenos</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-amber-100 p-2 rounded-full hover:bg-amber-200 transition-colors">
+                  <a href="#" className="contact-social-links">
                     <svg className="h-5 w-5 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
                     </svg>
@@ -128,17 +128,17 @@ export const Contacto = () => {
             <div className="md:col-span-3 p-6 md:p-8">
               {!formSubmitted ? (
                 <>
-                  <h2 className="text-xl font-semibold text-amber-800 mb-6">Envíanos un Mensaje</h2>
+                  <h2 className="contact-form-title">Envíanos un Mensaje</h2>
                   <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="grid md:grid-cols-2 gap-5">
+                    <div className="contact-form-grid">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-amber-900 mb-2">
+                        <label htmlFor="name" className="contact-form-label">
                           Nombre Completo
                         </label>
                         <input
                           type="text"
                           id="name"
-                          className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg p-3 w-full focus:ring-amber-500 focus:border-amber-500"
+                          className="contact-form-input"
                           placeholder="Tu nombre"
                           value={formData.name}
                           onChange={handleChange}
@@ -146,13 +146,13 @@ export const Contacto = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-amber-900 mb-2">
+                        <label htmlFor="email" className="contact-form-label">
                           Correo Electrónico
                         </label>
                         <input
                           type="email"
                           id="email"
-                          className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg p-3 w-full focus:ring-amber-500 focus:border-amber-500"
+                          className="contact-form-input"
                           placeholder="tu@email.com"
                           value={formData.email}
                           onChange={handleChange}
@@ -162,13 +162,13 @@ export const Contacto = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-amber-900 mb-2">
+                      <label htmlFor="subject" className="contact-form-label">
                         Asunto
                       </label>
                       <input
                         type="text"
                         id="subject"
-                        className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg p-3 w-full focus:ring-amber-500 focus:border-amber-500"
+                        className="contact-form-input"
                         placeholder="¿Sobre qué quieres hablar?"
                         value={formData.subject}
                         onChange={handleChange}
@@ -177,13 +177,13 @@ export const Contacto = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-amber-900 mb-2">
+                      <label htmlFor="message" className="contact-form-label">
                         Mensaje
                       </label>
                       <textarea
                         id="message"
                         rows="5"
-                        className="bg-amber-50 border border-amber-300 text-amber-900 text-sm rounded-lg p-3 w-full focus:ring-amber-500 focus:border-amber-500"
+                        className="contact-form-input"
                         placeholder="Escribe tu mensaje aquí..."
                         value={formData.message}
                         onChange={handleChange}
@@ -210,7 +210,7 @@ export const Contacto = () => {
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="w-full md:w-auto flex justify-center items-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 disabled:opacity-70 disabled:cursor-not-allowed transition-colors"
+                      className="contact-form-button"
                     >
                       {isLoading ? (
                         <>
