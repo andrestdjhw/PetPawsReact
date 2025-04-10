@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route element={<Layout/>}>
-        <Route index element={<DashboardPage />} />
+        <Route index element={<Productos />} />
         <Route path="/galeria" element={<Galeria/>} />
         <Route path="/quienes-somos" element={<QuienesSomos/>} />
         <Route path="/carrito" element={<Carrito/>} />
